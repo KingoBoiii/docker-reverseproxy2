@@ -4,7 +4,7 @@ FROM nginx:1.12
 COPY ./default.conf /etc/nginx/conf.d/default.conf
 
 # NOT FOUND response
-COPY ./backend-not-found.html /var/www/html/backend-not-found.html
+COPY ./html/ /var/www/html/
 
 # Proxy configurations
 COPY ./includes/ /etc/nginx/includes/
