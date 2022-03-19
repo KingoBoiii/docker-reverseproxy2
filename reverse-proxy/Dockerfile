@@ -4,7 +4,7 @@ FROM nginx:1.12
 COPY ./default.conf /etc/nginx/conf.d/default.conf
 
 # NOT FOUND response
-COPY ./html/ /var/www/html/
+COPY ./index.html /var/www/html/index.html
 
 # Proxy configurations
 COPY ./includes/ /etc/nginx/includes/
