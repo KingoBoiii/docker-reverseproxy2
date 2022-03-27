@@ -39,7 +39,7 @@ jobs:
           context: ./
           file: ./reverse-proxy/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/docker-reverseproxy:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/docker-reverseproxy2:latest
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
